@@ -11,7 +11,7 @@ import imgPiscis from "../images/signo12-piscis.png";
 import imgSagitario from "../images/signo09-sagitario.png";
 import imgTauro from "../images/signo02-tauro.png";
 import imgVirgo from "../images/signo06-virgo.png";
-import lalunaqueteparioLogo from "../images/lalunaTitle.png";
+import lalunaqueteparioLogo from "../images/lunaqueteparioLogo.png";
 
 export const lalunaquetepario = {
   nombre: "La Luna que te parió",
@@ -169,7 +169,7 @@ export const lalunaquetepario = {
       integrante: [
         {
           nombre: "Marcela Esteves",
-          iglink: "https://www.instagram.com/marce.esteves",
+          iglink: null,
           weblink: null,
         },
       ],
@@ -254,7 +254,7 @@ export const lalunaquetepario = {
       img: alternativa,
       altImg: "Alternativa Teatral",
       link: "http://www.alternativateatral.com/obra49722-la-luna-que-te-pario",
-      title: "Dejanos tu opinión!",
+      title: "Dejanos tu opinión",
     },
   ],
 };
