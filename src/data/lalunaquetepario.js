@@ -58,7 +58,7 @@ export const lalunaquetepario = {
         },
         {
           nombre: "Mauro Cappellacci",
-          iglink: "https://www.instagram.com/maurocappelacci",
+          iglink: "https://www.instagram.com/maurocappellacci/",
           weblink: null,
         },
       ],
@@ -68,7 +68,7 @@ export const lalunaquetepario = {
     {
       integrante: [
         {
-          nombre: "Victoria Barnfather",
+          nombre: "Vicky Barnfather",
           iglink: "https://www.instagram.com/vickybarn",
           weblink: null,
         },
@@ -78,7 +78,7 @@ export const lalunaquetepario = {
     {
       integrante: [
         {
-          nombre: "Federico Llambi",
+          nombre: "Federico Llambí",
           iglink: "https://www.instagram.com/federicollambi",
           weblink: null,
         },
@@ -88,7 +88,7 @@ export const lalunaquetepario = {
     {
       integrante: [
         {
-          nombre: "Silvia Sanchez",
+          nombre: "Silvia Sánchez",
           iglink: "https://www.instagram.com/sili_chez",
           weblink: null,
         },
@@ -138,7 +138,7 @@ export const lalunaquetepario = {
     {
       integrante: [
         {
-          nombre: "Santiago Garcia",
+          nombre: "Santiago García",
           iglink: "https://www.instagram.com/santigarcia.actor",
           weblink: null,
         },
