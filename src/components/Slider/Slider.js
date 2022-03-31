@@ -55,15 +55,11 @@ const Slider = ({ data }) => {
         <button
           className="prev"
           onClick={() => setIndex(checkNumber(index - 1))}
-        >
-          <FiChevronLeft />
-        </button>
+        ></button>
         <button
           className="next"
           onClick={() => setIndex(checkNumber(index + 1))}
-        >
-          <FiChevronRight />
-        </button>
+        ></button>
       </div>
     </section>
   );

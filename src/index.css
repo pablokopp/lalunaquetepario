@@ -47,6 +47,7 @@ a {
 }
 .container-title img {
   max-width: 300px;
+  margin: 2rem 0;
 }
 .container-sinopsis,
 .container-historia {
