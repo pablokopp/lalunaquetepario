@@ -2,7 +2,8 @@
   box-sizing: border-box;
 
   /*PORTADA*/
-  --bgcolor: #e0b54c;
+  --maxwidthPrograma: 400px;
+  --bgcolor: #f8cb59;
   --bgtransparency: #e0b64c6f;
   --bggradient: linear-gradient(
     180deg,
@@ -16,7 +17,6 @@
 body {
   margin: 0;
   padding: 0 1rem;
-  background: var(--bgcolor);
   background: var(--bggradient);
   background-image: url("./images/lunaBg.png");
   background-size: cover;
@@ -43,7 +43,7 @@ a {
 }
 
 .container-title {
-  max-width: 400px;
+  max-width: var(--maxwidthPrograma);
 }
 .container-title img {
   max-width: 300px;
@@ -51,7 +51,7 @@ a {
 }
 .container-sinopsis,
 .container-historia {
-  max-width: 400px;
+  max-width: var(--maxwidthPrograma);
   padding: 1rem;
   background-color: var(--bgtransparency);
   border-radius: 20px;
@@ -70,7 +70,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 400px;
+  max-width: var(--maxwidthPrograma);
 }
 
 .container-trabajo {
@@ -111,7 +111,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  max-width: 400px;
+  max-width: var(--maxwidthPrograma);
 }
 .container-logo {
   margin: 2rem 0;
@@ -130,8 +130,9 @@ a {
   transform: translateX(1rem);
   border-radius: 20px;
 }
-.obra-title {
+.obra-title, .lunas-title {
   text-shadow: var(--textshadow);
+  margin-bottom: 0;
 }
 
 .container-hechopor {
@@ -147,93 +148,48 @@ a {
   font-weight: 600;
 }
 
-/* SLIDER */
+/* CONT LUNAS */
 
-/*
-=============== 
-Variables
-===============
-*/
-
-:root {
-  --transition: all 0.5s cubic-bezier(0.73, 0.01, 0, 1.27);
-  --spacing: 0.1rem;
-  --radius: 0.25rem;
-  --max-width: 400px;
-}
-/*
-
-/*  global classes */
-
-/* section */
-.section {
-  margin: 0 auto;
-  width: 100%;
-  max-width: var(--max-width);
-}
-
-/*
-=============== 
-Slider
-===============
-*/
-
-.section-center {
-  margin: 0.5rem auto 1.5rem;
-  width: 100%;
-  /* have to have a height */
-  height: 300px;
-  max-width: 400px;
-  text-align: center;
-  position: relative;
+.container-lunas {
+  margin: 1rem auto;
   display: flex;
-  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: var(--maxwidthPrograma);
 }
-.person-img {
-  width: 300px;
-  height: 300px;
+.container-luna{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 130px;
 }
-.prev,
-.next {
-  position: absolute;
-  top: 0;
-  width: 3.25rem;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  border-color: transparent;
-  font-size: 2rem;
-  background-color: transparent;
-  cursor: pointer;
-  transition: var(--transition);
+.container-luna img{
+  max-width: 130px;
 }
-.prev:hover,
-.next:hover {
-  background: var(--clr-primary-5);
-}
-.prev {
-  left: 0;
-}
-.next {
-  right: 0;
+.container-luna h3{
+  margin:0;
+  transform: translateY(-0.8rem);
 }
 
-article {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: var(--transition);
+.container-luna-info img{
+  width: 300px;
 }
-article.activeSlide {
-  opacity: 1;
-  transform: translateX(0);
+.container-luna-info p{
+  margin: -2rem 0 0;
 }
-article.lastSlide {
-  transform: translateX(-100%);
+
+.button-luna{
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: var(--bgcolor);
 }
-article.nextSlide {
-  transform: translateX(100%);
+.lunas-title{
+  transform: translateY(1rem);
 }

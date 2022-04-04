@@ -34,7 +34,7 @@ const Slider = ({ data }) => {
       >
         {console.log(data)}
         {people.map((person, personIndex) => {
-          const { id, image, name } = person;
+          const { id, image, name, sintesis } = person;
 
           let position = "nextSlide";
           if (personIndex === index) {
@@ -47,8 +47,9 @@ const Slider = ({ data }) => {
             position = "lastSlide";
           }
           return (
-            <article className={position} key={id}>
+            <article className={`container-textoluna ${position}`} key={id}>
               <img src={image} alt={name} className="person-img" />
+              <p>{sintesis}</p>
             </article>
           );
         })}
