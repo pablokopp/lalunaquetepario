@@ -1,13 +1,11 @@
-import React, { useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 
-import { useLocation } from "react-router-dom";
-
-const ScrollUpFixer = ({ children }) => {
-  const location = useLocation();
-
+const ScrollUpFixer = ({ children, actLuna }) => {
   useLayoutEffect(() => {
-    document.documentElement.scrollTo(0, 0);
-  }, [location.pathname]);
+    if (actLuna !== 0) {
+      document.documentElement.scrollTo(0, 860);
+    }
+  }, [actLuna]);
 
   return children;
 };

@@ -1,5 +1,4 @@
-PROGRAMA DE MANO
+FALTA:
 
-Fonts
-font-family: 'Quicksand', sans-serif;
-font-family: 'Ubuntu', sans-serif;
+Ver animaciones entre cosas
+Ver tema de que cuando elijo una Luna vuelva a subir

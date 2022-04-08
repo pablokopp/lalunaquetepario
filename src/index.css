@@ -176,8 +176,11 @@ a {
 .container-luna-info img{
   width: 300px;
 }
-.container-luna-info p{
+.container-luna-info p:first-of-type{
   margin: -2rem 0 0;
+}
+.container-luna-info h4{
+  margin: 0.75rem
 }
 
 .button-luna{
