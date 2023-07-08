@@ -14,9 +14,6 @@ const Obra = ({ dataObra }) => {
     <div className={`container-obra ${dataObra.cn}`}>
       <Titulo imgLogo={titulo.imgLogo} cn={titulo.cn} />
       <Sinopsis />
-      <Lunas data={lalunaquetepario.lunas} />
-
-      <FichaTecnica fichaTecnica={fichaTecnica} />
       <TextContainer
         text={sintesisYRecorrido.text}
         title={sintesisYRecorrido.title}
@@ -26,6 +23,10 @@ const Obra = ({ dataObra }) => {
         title={palabrasDirectora.title}
         extra={palabrasDirectora.extra}
       />
+      <FichaTecnica fichaTecnica={fichaTecnica} />
+
+      <Lunas data={lalunaquetepario.lunas} />
+
       <FooterLogos logos={logos} />
     </div>
   );
