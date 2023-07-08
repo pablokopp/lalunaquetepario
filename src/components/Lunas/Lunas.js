@@ -23,7 +23,7 @@ const Lunas = ({ data }) => {
             ))
           ) : (
             <div className="container-luna-info">
-              <img src={actLuna.image} className="" />
+              <img src={actLuna.image} className="" alt={actLuna.name} />
               <p>{actLuna.sintesis}</p>
               <h4>Refugio</h4>
               <p>{actLuna.refugio}</p>
@@ -31,6 +31,13 @@ const Lunas = ({ data }) => {
               <p>{actLuna.desafio}</p>
               <h4>Talentos</h4>
               <p>{actLuna.talento}</p>
+              <h4>Extracto de la obra</h4>
+              {actLuna.extractoObra ? <p>{actLuna.extractoObra}</p> : null}
+              {actLuna.dialogo
+                ? actLuna.dialogo.map((dialog) => <p>{dialog}</p>)
+                : null}
+              <h4>Mensaje a su chupete</h4>
+              <p>{actLuna.chupete}</p>
               <button className="button-luna" onClick={() => setActLuna(1)}>
                 Ver otras Lunas
               </button>

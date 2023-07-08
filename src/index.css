@@ -1,6 +1,6 @@
 :root {
   box-sizing: border-box;
-
+  font-size: 20px;
   /*PORTADA*/
   --maxwidthPrograma: 400px;
   --bgcolor: #f8cb59;
@@ -17,13 +17,18 @@
 body {
   margin: 0;
   padding: 0 1rem;
-  background: var(--bggradient);
+  background: var(--bgcolor);
   background-image: url("./images/lunaBg.png");
   background-size: cover;
 }
 a {
   text-decoration: none;
 }
+
+.text-bold{
+  font-weight: bold;
+}
+
 .container-programa,
 .container-obra,
 .container-portada {
@@ -49,14 +54,17 @@ a {
   max-width: 300px;
   margin: 1rem 0;
 }
-.container-sinopsis,
-.container-historia {
+.container-sinopsis, .container-fichatecnica,
+.container-texto {
   max-width: var(--maxwidthPrograma);
   padding: 1rem;
   background-color: var(--bgtransparency);
   border-radius: 20px;
 }
 
+.container-texto, .container-fichatecnica{
+  margin-top: 2rem;
+}
 .historia-accent {
   font-size: 1.3rem;
   margin: 1rem auto;

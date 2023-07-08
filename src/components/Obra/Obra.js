@@ -1,23 +1,31 @@
-import Elenco from "../Elenco/Elenco";
+import FichaTecnica from "../FichaTecnica/FichaTecnica";
 import FooterLogos from "../FooterLogos/FooterLogos";
-import HistoriaObra from "../HistoriaObra/HistoriaObra";
 import Lunas from "../Lunas/Lunas";
 import React from "react";
 import Sinopsis from "../Sinopsis/Sinopsis";
-import Slider from "../Slider/Slider";
+import TextContainer from "../TextContainer/TextContainer";
 import Titulo from "../Titulo/Titulo";
 import { lalunaquetepario } from "../../data/lalunaquetepario";
 
 const Obra = ({ dataObra }) => {
-  const { titulo, sinopsis, elenco, logos, slider } = dataObra;
+  const { titulo, sintesisYRecorrido, palabrasDirectora, logos, fichaTecnica } =
+    dataObra;
   return (
     <div className={`container-obra ${dataObra.cn}`}>
       <Titulo imgLogo={titulo.imgLogo} cn={titulo.cn} />
-      <Sinopsis texto={sinopsis.texto} cn={sinopsis.cn} />
+      <Sinopsis />
       <Lunas data={lalunaquetepario.lunas} />
-      <HistoriaObra />
-      <h2 className="obra-title">El Equipo</h2>
-      <Elenco integrantes={elenco} />
+
+      <FichaTecnica fichaTecnica={fichaTecnica} />
+      <TextContainer
+        text={sintesisYRecorrido.text}
+        title={sintesisYRecorrido.title}
+      />
+      <TextContainer
+        text={palabrasDirectora.text}
+        title={palabrasDirectora.title}
+        extra={palabrasDirectora.extra}
+      />
       <FooterLogos logos={logos} />
     </div>
   );
