@@ -3,7 +3,13 @@ import { useLayoutEffect } from "react";
 const ScrollUpFixer = ({ children, actLuna }) => {
   useLayoutEffect(() => {
     if (actLuna !== 0) {
-      document.documentElement.scrollTo({ top: 3450, behavior: "smooth" });
+      const element = document.getElementById("luna-scroll");
+      const topOffset = element.offsetTop;
+      document.documentElement.scrollTo({
+        top: topOffset,
+        behavior: "smooth",
+      });
+      // document.documentElement.scrollTo({ top: 3450, behavior: "smooth" });
     }
   }, [actLuna]);
 

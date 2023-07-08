@@ -7,7 +7,7 @@ const Lunas = ({ data }) => {
 
   return (
     <ScrollUpFixer actLuna={actLuna} setActLuna={setActLuna}>
-      <div className="container-lunas">
+      <div className="container-lunas" id="luna-scroll">
         <h2 className="lunas-title">
           {actLuna !== 0 && actLuna !== 1
             ? `Luna en ${actLuna.name}`
