@@ -121,9 +121,17 @@ a {
   justify-content: space-around;
   max-width: var(--maxwidthPrograma);
 }
-.container-logo {
-  margin: 2rem 0;
+.container-logo, .container-logo--alternativa {
+  margin: 0 0 1rem;
   width: 100%;
+}
+
+.container-logo.aurora{
+  margin-bottom: 20px;
+}
+
+.container-logo.quesoski{
+  padding: 0 0 1rem;
 }
 .logo-opinion {
   display: flex;
@@ -133,9 +141,16 @@ a {
 .logo-opinion h3 {
   margin-right: 0.5rem;
 }
-.container-logo img {
+.container-logo img, .container-logo--alternativa img {
   max-width: 200px;
-  transform: translateX(1rem);
+  border-radius: 20px;
+}
+.link-logo{
+  color: var(--fontcolor);
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: var(--bgtransparency);
+  padding: 0.5rem;
   border-radius: 20px;
 }
 .obra-title, .lunas-title {
@@ -174,7 +189,7 @@ a {
   max-width: 130px;
 }
 .container-luna img{
-  max-width: 130px;
+  max-width: 120px;
 }
 .container-luna h3{
   margin:0;

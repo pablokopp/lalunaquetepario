@@ -8,8 +8,14 @@ import Titulo from "../Titulo/Titulo";
 import { lalunaquetepario } from "../../data/lalunaquetepario";
 
 const Obra = ({ dataObra }) => {
-  const { titulo, sintesisYRecorrido, palabrasDirectora, logos, fichaTecnica } =
-    dataObra;
+  const {
+    titulo,
+    sintesisYRecorrido,
+    palabrasDirectora,
+    logos,
+    fichaTecnica,
+    logoalternativa,
+  } = dataObra;
   return (
     <div className={`container-obra ${dataObra.cn}`}>
       <Titulo imgLogo={titulo.imgLogo} cn={titulo.cn} />
@@ -27,7 +33,7 @@ const Obra = ({ dataObra }) => {
 
       <Lunas data={lalunaquetepario.lunas} />
 
-      <FooterLogos logos={logos} />
+      <FooterLogos logos={logos} logoalternativa={logoalternativa} />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import alternativa from "../images/alternativaLogoNegro.png";
+import ecasLogo from "../images/ecasLogo.png";
 import imgAcuario from "../images/signo11-acuario.png";
 import imgAries from "../images/signo01-aries.png";
 import imgCancer from "../images/signo04-cancer.png";
@@ -12,6 +13,8 @@ import imgSagitario from "../images/signo09-sagitario.png";
 import imgTauro from "../images/signo02-tauro.png";
 import imgVirgo from "../images/signo06-virgo.png";
 import lalunaqueteparioLogo from "../images/lunaqueteparioLogo.png";
+import quesoskiLogo from "../images/quesoskiLogo.png";
+import wineNetLogo from "../images/wineNetLogo.png";
 
 export const lalunaquetepario = {
   nombre: "La Luna que te parió",
@@ -284,18 +287,35 @@ export const lalunaquetepario = {
   ],
   logos: [
     {
-      img: alternativa,
-      altImg: "Alternativa Teatral",
-      link: "http://www.alternativateatral.com/obra49722-la-luna-que-te-pario",
-      title: "Dejanos tu opinión",
-      refugio:
-        "No poder discriminar , teñir todo con la emoción, tomarse todo personal, sumergirse en el mundo de la fantasía, no distinguir que es ilusión que es real, olvidarse de sí mismos, abandono, desnutrición. Estar sumergido en la fantasía para protegerse de la cruda realidad. Tomar el dolor de otros. Entrar en contacto con otros niveles de percepción. ",
-      desafio:
-        "Salir de la fantasía, poner límites, bordes, palabras. Respetar los límites. Indentificar que es propio y que es de otros.",
-      talento:
-        "Ponen amor allí donde van. Aquí el amor sin condiciones es real. Son grandes servidores del amor en todas sus formas. Humildes trabajadores del amor de corazón sensible y amoroso.",
+      img: ecasLogo,
+      altImg: "ECAS",
+      cn: "",
+      link: "https://www.instagram.com/somosecas/",
+    },
+    {
+      img: wineNetLogo,
+      altImg: "Wine Net",
+      cn: "",
+      link: "https://winenet.com.ar/",
+    },
+    {
+      img: quesoskiLogo,
+      altImg: "Quesoski",
+      cn: "quesoski",
+      link: "https://www.instagram.com/quesoski/",
+    },
+    {
+      title: "Aurora, salas para crear",
+      cn: "aurora",
+      link: "https://www.instagram.com/aurora.villacrespo/",
     },
   ],
+  logoalternativa: {
+    img: alternativa,
+    altImg: "Alternativa Teatral",
+    link: "http://www.alternativateatral.com/obra49722-la-luna-que-te-pario",
+    title: "Dejanos tu opinión",
+  },
   sintesisYRecorrido: {
     text: [
       "Es un viaje poético y musical sobre las 12 lunas del zodíaco. Usamos la astrología para activar nuestra sensibilidad espiritual. La luna simboliza nuestra emoción. El foco está puesto en las conductas emocionales, ¿para qué?, para construir relaciones basadas en la confianza, el amor y la creatividad. Se estrenó en Buenos Aires el 8 de diciembre del 2016, en el 2017 fue seleccionada por el Festival Internacional de Cuttak India y se presentó en la cultura milenaria hindú.",
