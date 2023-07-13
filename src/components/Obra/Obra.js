@@ -15,6 +15,7 @@ const Obra = ({ dataObra }) => {
     logos,
     fichaTecnica,
     logoalternativa,
+    logoalternativalunita,
   } = dataObra;
   return (
     <div className={`container-obra ${dataObra.cn}`}>
@@ -33,7 +34,11 @@ const Obra = ({ dataObra }) => {
 
       <Lunas data={lalunaquetepario.lunas} />
 
-      <FooterLogos logos={logos} logoalternativa={logoalternativa} />
+      <FooterLogos
+        logos={logos}
+        logoalternativa={logoalternativa}
+        logoalternativalunita={logoalternativalunita}
+      />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import Logo from "../Logo/Logo";
 import LogoAlternativa from "../Logo/LogoAlternativa";
 import React from "react";
 
-const FooterLogos = ({ logos, logoalternativa }) => {
+const FooterLogos = ({ logos, logoalternativa, logoalternativalunita }) => {
   return (
     <div className="container-logos">
       {logos && <h2>Nos acompañan</h2>}
@@ -23,6 +23,15 @@ const FooterLogos = ({ logos, logoalternativa }) => {
         altImg={logoalternativa.altImg}
         key={logoalternativa.altImg}
         title={logoalternativa.title}
+        obra={logoalternativa.obra}
+      />
+      <LogoAlternativa
+        img={logoalternativalunita.img}
+        link={logoalternativalunita.link}
+        altImg={logoalternativalunita.altImg}
+        key={logoalternativalunita.altImg}
+        title={logoalternativalunita.title}
+        obra={logoalternativalunita.obra}
       />
     </div>
   );

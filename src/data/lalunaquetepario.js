@@ -314,7 +314,15 @@ export const lalunaquetepario = {
     img: alternativa,
     altImg: "Alternativa Teatral",
     link: "http://www.alternativateatral.com/obra49722-la-luna-que-te-pario",
-    title: "Dejanos tu opinión",
+    title: "Dejanos tu opinión de ",
+    obra: '"La luna que te parió"',
+  },
+  logoalternativalunita: {
+    img: alternativa,
+    altImg: "Alternativa Teatral",
+    link: "http://www.alternativateatral.com/obra66137-la-lunita-que-te-pario",
+    title: "Dejanos tu opinión de ",
+    obra: '"La lunita que te parió"',
   },
   sintesisYRecorrido: {
     text: [

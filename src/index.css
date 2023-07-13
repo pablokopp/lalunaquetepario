@@ -126,6 +126,10 @@ a {
   width: 100%;
 }
 
+.container-logo--alternativa:first-of-type{
+  margin-top: 2rem;
+}
+
 .container-logo.aurora{
   margin-bottom: 20px;
 }
@@ -141,9 +145,15 @@ a {
 .logo-opinion h3 {
   margin-right: 0.5rem;
 }
-.container-logo img, .container-logo--alternativa img {
+.container-logo img {
   max-width: 200px;
   border-radius: 20px;
+
+}
+.container-logo--alternativa img{
+  max-width: 150px;
+  border-radius: 20px;
+
 }
 .link-logo{
   color: var(--fontcolor);
